@@ -15,6 +15,9 @@ public class recursion {
         f2();
         System.out.println("BYE");
     }
+    public static void main(String[] args) {
+        f1();
+    }
 
     public static void pd(int n)
     {
