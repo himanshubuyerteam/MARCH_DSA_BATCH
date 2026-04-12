@@ -55,6 +55,42 @@ public class sortingAlgo2 {
         int []merged_sorted_array = merge2Sorted(left_sorted_array, right_sorted_array);
         return merged_sorted_array;
     }
+
+    public void swap(int []arr,int i,int j)
+    {
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    public int partation(int []arr,int startIdx,int endIdx,int pivotEle)
+    {
+        int i=startIdx;
+        int j=startIdx;
+        while(i<=endIdx)
+        {
+            if(arr[i]<=pivotEle){
+                swap(arr,i,j);
+                i++;
+                j++;
+            }
+            else{
+                i++;
+            }
+        }
+        return j-1;
+    }
+    public void quickSort_helper(int []arr,int startIdx,int endIdx)
+    {
+        if(startIdx>endIdx)
+            return;
+        int partIdx=partation(arr,startIdx,endIdx,arr[endIdx]);
+        quickSort_helper(arr, startIdx, partIdx-1);
+        quickSort_helper(arr, partIdx+1, endIdx);
+    }
+    public void quickSort(int []arr)
+    {
+        quickSort_helper(arr, 0, arr.length-1);
+    }
     //Give me a unsorted Array, i return an sorted Array
     public static int[] mergeSort(int []arr)
     {
