@@ -176,3 +176,39 @@ public class LinkedList {
         
     }
 }
+
+
+// 1   ->  2   ->  3   ->  4
+// 1 <- 2 <- 3 <- 4
+
+// 1---2---3
+
+
+// class DoublyNode
+// {
+//     int val
+//     Node next;
+//     Node prev;
+// }
+
+// class SinglyNode
+// {
+//     int val
+//     Node next;
+//     Node prev;
+// }
+
+// LinkedList<<<<Dp
+//MS--- Tree/ LinkedList
+//Google-- Graphs
+//Amazon--Dp/BinarySearch/Graphs
+
+// Recursion>LinkedList>StackQueue>Tree>Graphs>Dp
+
+
+//s1- do more medium
+//Medium Time taking is less
+// Hard -- Invest more time
+// Use AI as your Buddy
+
+//Editoral
